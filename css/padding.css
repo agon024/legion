@@ -1,0 +1,72 @@
+.no-pad {
+  padding: 0;
+}
+
+.no-pad-top{
+  padding-top: 0;
+}
+.xxlarge-pad-top {
+  padding-top: 75px;
+}
+.xlarge-pad-top {
+  padding-top: 40px;
+}
+
+.large-pad-top {
+  padding-top: 30px;
+}
+
+.medium-pad-top {
+  padding-top: 20px;
+}
+
+.small-pad-top {
+  padding-top: 10px;
+}
+
+.xsmall-pad-top {
+  padding-top: 5px;
+}
+
+.large-pad-bot {
+  padding-bottom: 30px;
+}
+  
+
+/*########################################################################
+Large Screen Size
+########################################################################*/
+@media only screen and (min-width: 52.438em) {
+  
+  .xxlarge-pad-top {
+    padding-top: 150px;
+  }
+  .xlarge-pad-top {
+    padding-top: 80px;
+  }
+
+  .large-pad-top {
+    padding-top: 60px;
+  }
+
+  .medium-pad-top {
+    padding-top: 40px;
+  }
+
+  .small-pad-top {
+    padding-top: 20px;
+  }
+
+  .xsmall-pad-top {
+    padding-top: 10px;
+  }
+
+  .xxsmall-pad-top {
+    padding-top: 5px;
+  }
+
+  .large-pad-bot {
+    padding-bottom: 60px;
+  }
+
+}

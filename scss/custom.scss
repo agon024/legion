@@ -1,0 +1,881 @@
+@import "compass/CSS3";
+@import "fonts";
+@import url("padding.css");
+@import url(http://fonts.googleapis.com/css?family=Droid+Sans);
+@import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,900italic);
+
+*, *::after, *::before { -webkit-box-sizing: border-box; box-sizing: border-box; }
+.clearfix::before, .clearfix::after {display: table;  content: ''; }
+.clearfix::after { clear: both; }
+
+$head: 'bebas_neuelight', sans-serif;
+$head2: 'bebas_neueregular, sans-serif';
+$body: 'Droid Sans', sans-serif;
+$quote: 'Playfair Display', serif;
+$gr: #dadada;
+$gr2: #a5a6a7;
+$blu: #22313F;
+
+body {
+  background: $blu;
+  color: #dbdbdb;
+  font-weight: 400;
+  font-size: 1rem;
+  font-family: $body;
+  overflow-x: hidden;
+}
+
+[class^="flaticon-"], [class*=" flaticon-"],
+[class^="flaticon-"], [class*=" flaticon-"] {   
+  font-family: Flaticon;
+  color: $gr2;
+  text-align: center;
+  font-size: 30px;
+  font-style: normal;
+  @include transition(color, 0.4s);
+  &:hover{
+    color: $blu;
+  }
+}
+
+.flaticon-email21:before {
+  content: "\e000";
+}
+
+.flaticon-github17:before {
+  content: "\e001";
+}
+
+.flaticon-google1:before {
+  content: "\e002";
+}
+
+.flaticon-linkedin11:before {
+  content: "\e003";
+}
+
+.row{
+  max-width: 75.000em;
+}
+
+p{
+  font-size: 1.1rem;
+  line-height: 1.5rem;
+}
+
+a {
+  color: $blu;
+  text-decoration: none;
+}
+
+.modalBtn{
+  p{
+    display: inline;
+  }
+}
+
+button{
+  &:hover{
+    background-color: rgba(white, 0);
+  }
+  &:active{
+    background-color: rgba(white, 0);
+  }
+  &:focus{
+    background-color: rgba(white, 0);
+  }
+}
+
+.midBack{
+  position: relative;
+  height: 600px;
+}
+
+.headImg{
+  height: 800px;
+  width: 100%;
+  background: url(../img/midbg_mob.jpg) center center no-repeat;
+  @include background-size(cover); // multiple: comma-delimited
+}
+
+.midNfo{
+  position: absolute;
+  top:0;
+  left: 0;
+}
+.mobGrid{
+  &[class*="block-grid-"] > li {
+    padding: 0 0.625rem 1rem;
+    &:nth-of-type(odd){
+      padding: 0 0 1rem 0.625rem;
+    }
+    &:nth-of-type(even){
+      padding: 0 0.625rem 1rem 0;
+    }
+  }
+  p{
+    margin-bottom: 10px;
+    font-size: 1.5em;
+  }
+}
+
+.techGrid{
+  &[class*="block-grid-"] > li {
+    padding: 0 0.625rem 0;
+  }
+}
+footer{
+  min-height: 500px;
+}
+
+h1,h2,h3,h4,h5,h6{
+  width: 100%;
+  word-spacing: -0.40rem;
+  letter-spacing: 2px;
+  color: $gr;
+  font-family: $head;
+  font-weight: bold;
+}
+
+blockquote{
+  border-left: none;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  margin-top: 50px;
+  cite{
+    font-size: 1.3rem;
+    color: $gr2;
+    text-align: center;
+  }
+  p{
+    text-align: center;
+    margin-bottom: 0;
+    color: $gr;
+    font-family: $quote;
+    font-size: 24px;
+    font-style: italic;
+    quotes: "\201C""\201D""\2018""\2019";
+    &:before {
+      color: darken($blu, 5%);
+      font-family: $quote;
+      content: open-quote;
+      font-style: italic;
+      font-size: 4em;
+      line-height:0;
+      margin-right: 0.1em;
+      vertical-align: -0.45em;
+    }
+    &:after {
+      color: darken($blu, 5%);
+      font-family: $quote;
+      content: close-quote;
+      font-size: 4em;
+      font-style: italic;
+      line-height:0;
+      vertical-align: -0.5em;
+    }
+  }
+}
+
+.modalBtn{
+  background-color: darken($blu, 8%);
+  width: 100%;
+  padding: 0.44em;
+  font-family: $body;
+  font-size: 20px;
+  font-weight: bold;
+  color: $gr;
+  border: 2px solid rgba($gr, 0);
+  margin-bottom: 0;
+  @include transition(background-color, 0.4s);
+  &:hover{
+    background-color: $blu;
+    border: 2px solid rgba($gr, 1);
+    @include transition(background-color, 0.4s);
+  }
+  &:focus{
+    background-color: darken($blu, 8%);
+    @include transition(background-color, 0.4s);
+  }
+}
+
+.button{
+  @extend .modalBtn;
+  background-color: $gr2;
+  border: 2px solid rgba($gr2, 0);
+  color: $blu;
+  &:hover{
+    background-color: $blu;
+    border: 2px solid rgba($gr2, 1);
+    @include transition(background-color, 0.4s);
+  }
+  &:focus{
+    background-color: $blu;
+    @include transition(background-color, 0.4s);
+  }
+}
+
+.mobBtn{
+  @extend .modalBtn;
+  margin-top: 0;
+  padding: 1em;
+  background-color: rgba($gr, 0.5);
+  border: none;
+  color: $blu;
+  &:hover{
+    cursor: pointer;
+    color: $gr;
+    background-color: $blu;
+    border: none;
+    @include transition(background-color, 0.4s);
+  }
+  &:focus{
+    background-color: $blu;
+    @include transition(background-color, 0.4s);
+  }
+  p{
+    font-size: 35px;
+  }
+}
+
+.topNumber{
+  position: absolute;
+  width: 320px;
+  top:60px;
+  right: 0;
+  left: 0;
+  margin: 0 auto;
+  z-index: 99999;
+  h3{
+    text-align: center;
+  }
+  a{
+    color: $gr2;
+    font-size: 40px;
+    font-weight: 900;
+  }
+}
+
+.social{
+  position: absolute;
+  width: 320px;
+  top:10px;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 99999;
+}
+
+.socialBot{
+  [class^="flaticon-"], [class*=" flaticon-"],
+  [class^="flaticon-"], [class*=" flaticon-"] {   
+    font-family: Flaticon;
+    color: $gr;
+    text-align: center;
+    font-size: 50px;
+    font-style: normal;
+    @include transition(color, 0.4s);
+    &:hover{
+      color: darken($gr, 45%);
+    }
+  }
+}
+
+.about{
+  margin-bottom: 60px;
+}
+
+.menu{
+  height: 65px;
+  width: 100%;
+  z-index: 98;
+  position: fixed;
+  padding: 10px;
+  top:0;
+  left:0;
+  background-color: $blu;
+  @include box-shadow(0px 0px 15px rgba(black, 0.5));
+}
+
+.menuOpen{
+  background: url(../img/menuSub.svg) 0 0 no-repeat;
+  @include background-size(cover);
+  width: 45px;
+  height: 45px;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.mobileMenu{
+  position: fixed;
+  z-index: 99;
+  top:0;
+  left:-320px;
+  width: 320px;
+  height: 100%;
+  min-height: 100%;
+  background-color: $blu;
+  @include box-shadow(0px 0px 15px rgba(black, 0.5));
+}
+.close{
+  padding:15px 15px 0 15px;
+  h1{
+    display:inline-block;
+    line-height: 0.8em;
+  }
+}
+
+.closeBtn{
+  display:inline;
+  cursor: pointer;
+  margin-top: 10px;
+  float: right;
+  width: 35px;
+  height: 35px;
+  background: url(../img/close.svg) 0 0 no-repeat;
+  @include background-size(cover);
+}
+
+.menu{
+  h1{
+    line-height: 0.5em;
+  }
+  a{
+    letter-spacing: 1px;
+    color: $gr;
+    font-weight:bold;
+  }
+  .active{
+    a{
+      padding: 0 10px;
+      border-left: 2px solid $gr;
+      border-right: 2px solid $gr;
+    }
+  }
+}
+
+.menuActive{
+  left:0;
+}
+
+.boldWord{
+  font-family: 'bebas_neueregular';
+}
+
+.port-hide{
+  visibility: hidden;
+}
+
+.company{
+  width: 100%;
+  text-align: center;
+  padding: 20px;
+  position: absolute;
+  bottom: 70px; 
+  left: 0;
+  font-size: 1.15rem;
+  h4{
+    word-spacing: 0;
+    text-align: center;
+    font-family: $body;
+  }
+}
+
+
+.portBtn{
+  width: 100%;
+  position: absolute;
+  bottom: 0; 
+  text-align :center;
+  right:0;
+  padding: 10px;
+  h3{
+    position: relative;
+    width: 225px;
+    top: -10px;
+    display: inline;
+    color: $gr2;
+    padding-left: 10px;
+    font-family: $body;
+    word-spacing: 0;   
+  }
+}
+
+.content{
+  margin: 10px;
+  h1{
+    font-family: $head;
+    text-transform: uppercase;
+    word-spacing: -0.30rem;
+  }
+}
+
+.intro {
+  position: fixed;
+  @include box-shadow(0 0 15px rgba(black, 0.5));
+  z-index: 10;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  background: $blu;
+  -webkit-transition: -webkit-transform 0.6s;
+  transition: transform 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+}
+
+.container--open .intro {
+  -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
+  transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
+}
+
+.intro__image {
+  position: absolute;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  max-width: none;
+  width: auto;
+  height: auto;
+  opacity: 0.8;
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transition: -webkit-transform 0.6s, opacity 0.6s;
+  transition: transform 0.6s, opacity 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  background: url("../img/mobile_bg.jpg") center center no-repeat;
+  @include background-size(cover);
+}
+
+.container--open .intro__image {
+  opacity: 0.3;
+  -webkit-transform: translate3d(0, 30%, 0);
+  transform: translate3d(0, 30%, 0);
+}
+
+.intro__content {
+  position: relative;
+  padding: 20px;
+  min-height: 100%;
+  height: 100%;
+}
+
+.intro__title {
+  margin: 0;
+  font-size: 4rem;
+  letter-spacing: 2px;
+  font-family: $head;
+  line-height: 1;
+  color: $gr2;
+
+}
+
+.intro_sub{
+  color: $gr2;
+}
+.reveal-modal-bg{
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(darken($blu, 8%), 0.9);
+}
+
+.reveal-modal{
+  background-color: $blu;
+  border: 4px solid darken($blu, 8%);
+}
+
+.close-reveal-modal{
+  top: -0.01rem !important;
+  right: 1.2rem !important;
+}
+
+.modal{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  p{
+    font-size: 1.1em;
+  }
+}
+
+.trigger {
+  display: inline;
+  position: relative;
+  -webkit-flex: none;
+  flex: none;
+  overflow: hidden;
+  margin: 0 0 0 20px;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  outline: none;
+  border: none;
+  background: none;
+}
+
+.icon rect,
+.icon line {
+  stroke: #dbdbdb;
+  fill: none;
+  stroke-width: 10px;
+}
+.icon rect{
+  stroke-width: 2px;
+}
+
+.icon {
+  -webkit-transform-origin: 50% 50%;
+  transform-origin: 50% 50%;
+  -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
+  transition: opacity 0.3s, transform 0.3s;
+  &:hover{
+    cursor: pointer;
+  }
+}
+
+.icon--cross,
+.trigger--active .icon--grid {
+  padding: 0 0 0 20px;
+  opacity: 0;
+  -webkit-transform: scale3d(1, 1, 1);
+  transform: scale3d(1, 1, 1);
+}
+
+.trigger--active .icon--cross {
+  opacity: 1;
+  -webkit-transform: scale3d(0.8, 0.8, 0.8);
+  transform: scale3d(0.8, 0.8, 0.8);
+}
+
+.portWrap {
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 125px 0 0;  
+}
+
+.portWrap::after {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $blu;
+  content: '';
+  opacity: 1;
+  -webkit-transition: opacity 0.6s;
+  transition: opacity 0.6s;
+  -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
+  pointer-events: none;
+}
+
+.container--open .portWrap::after {
+  opacity: 0;
+}
+
+.sites{
+  opacity: 0;
+}
+
+.graphics{
+  opacity: 0;
+}
+
+.photos{
+  opacity: 0;
+}
+
+.links{
+  padding-left: 15px;
+}
+
+.mobileMenu{
+  a{
+    font-family: $head;
+    display: block;
+    word-spacing:-0.40rem;
+    font-size: 2.75em;
+    width: 100%;
+    color: $gr;
+    @include transition(all 0.3s ease);
+    &:hover{
+      color: darken($blu, 8%);
+    }
+  }
+}
+
+.item{
+  @include transition(all 0.5s ease);
+  &:hover{
+    -webkit-transform: scale3d(1.05, 1.05, 1.05);
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+}
+
+// Slide in as you scroll down
+.module {
+  width: 100%;
+  position: relative;
+  float:left;
+  padding: 40px 0;
+  overflow:hidden;
+  opacity: 0;
+  &:nth-child(odd) {
+    margin-right: 0;
+  }
+  h2{
+    width: 100%;
+    padding-top:15x;
+    text-align: center;
+    bottom: 0;
+    left:0;
+    z-index: 999;
+  }
+}
+.already-visible{
+  opacity: 1;
+}
+
+/*##################################################
+################# contact menu  ##################*/
+.contact-form {
+  position:fixed;
+  top:15px;
+  right:0;
+  left:0;
+  margin: 0 auto;
+  z-index:997;
+  background-color: $blu;
+  border:solid 1px $blu;
+  padding:0 12px 12px 12px;
+  width:300px;
+  box-shadow:0px 0px 10px rgba(black, 0.5);
+  display: none;
+}
+#contClose{
+  padding: 15px 0;
+  img{
+    width: 25px;
+    height: 25px;
+  }
+  &:hover{
+    cursor: pointer;
+  }
+}
+#contact{
+  &:hover{
+    cursor: pointer;
+  }
+}
+.cont-sites{
+  p {
+    margin:0;
+  }
+}
+h3{
+  &.number{
+    font-size: 40px;
+    text-align: center;
+    word-spacing: 0;
+    a{
+      color: $gr;
+    }
+  }
+}
+
+h1{
+  &.number{
+    font-size: 40px;
+    text-align: center;
+    word-spacing: 0;
+    a{
+      color: $gr;
+    }
+  }
+}
+
+ 
+/*########################################################################
+Medium Screen Size
+########################################################################*/
+@media only screen and (min-width: 40.063em) {
+
+  .company{
+    width: auto;
+    text-align:left;
+    padding: 20px;
+    position: absolute;
+    bottom: 0; 
+    left: 0;
+    font-size: 1.15rem;
+  }
+  .intro__image {
+    background: url("../img/bg.jpg") center center no-repeat;
+    @include background-size(cover);
+  }
+
+  p{
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
+
+  blockquote {
+    cite{
+      font-size: 1.8rem;
+    }
+    p {
+      font-size: 35px;
+    }
+  }
+  .headImg{
+    background: url(../img/midbg.jpg) right center no-repeat;
+    @include background-size(cover);
+  }
+
+  .topNumber{
+    top:0;
+    right: auto;
+    left: 10px;
+    margin:0;
+    h3{
+    text-align: left;
+  }
+  }
+
+  .social{
+    top:10px;
+    left: auto;
+    right: 10px;
+    margin:0;
+  }
+
+  .copy{
+    padding-top: 15px;
+  }
+
+  .portWrap {
+    padding: 200px 0 0;  
+  }
+  .module {
+    padding: 0.938rem;
+    width: 50%;
+  }
+  .modal{
+    p{
+      font-size: 1.2em;
+    }
+  }
+  .mobBtn{
+    margin-top: 20px;
+  }
+
+  .techGrid{
+    margin-top: 40px;
+  }
+
+  h1.myNfo{
+    margin: 0;
+    font-size: 40px;
+  }
+
+  .itemWrap{
+    position: relative;
+    width: 33.3333%;
+    padding: 15px;
+  }
+
+  .container--open .intro {
+    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 150px, 0);
+    transform: translate3d(0, -100%, 0) translate3d(0, 150px, 0);
+  }
+
+  .portBtn{
+    width: auto;
+    opacity:1;
+    position: absolute;
+    bottom: 30px;
+    right:0; 
+    text-align:right;
+    @include transition(right 0.7s ease);
+    &.portBtnOpen{
+      right: -235px;
+    }
+  }
+
+}
+
+/*########################################################################
+Mid-Medium Screen Size
+########################################################################*/
+
+@media only screen and (max-width: 54.188em) {
+
+  .company{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    position: absolute;
+    bottom: 70px; 
+    left: 0;
+    font-size: 1.15rem;
+  }
+
+  .container--open .intro {
+    -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
+    transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
+  }
+
+  .portBtn{
+    width: 100%;
+    position: absolute;
+    bottom: 0; 
+    text-align :center;
+    right:0;
+    padding: 10px;
+  }
+
+}
+
+/*########################################################################
+large Screen Size
+########################################################################*/
+
+@media only screen and (min-width: 62.500em) {
+
+  .module {
+    width: 33.333%;
+  }
+
+  .modal{
+    p{
+      font-size: 1.5em;
+    }
+  }
+
+  .copy{
+    padding-top: 25px;
+  }
+
+  blockquote {
+    cite{
+      font-size: 2.2rem;
+    }
+    p {
+      font-size: 50px;
+    }
+  }
+
+  .techGrid{
+    margin-top: 0;
+  }
+
+}
