@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/app.css" />
+  <style>
+    * {
+      -webkit-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+
+    body{
+      background-color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    #container{
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-top: 20px;
+    }
+    .image{
+      width: 25%;
+      /*padding: 15px;*/
+      background-color: #dadada;
+      border: 4px solid #333;
+      float: left;
+      height: 300px;
+    }
+    .item{
+      /*padding: 35px;*/
+    }
+
+  </style>
+
+  
+</head>
+<body>
+
+  <div id="container">
+
+  </div>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+  <script src="jquery.masonry.min.js"></script>
+  <script>
+    var y=0, i=0;
+    while( i++ < 100) {
+      $( "#container" ).append('<div id="t' + i + '" class="item image"></div>');
+      var y = Math.floor(Math.random() * 200) + 100;
+      $('#t' + i).css({
+          height: y,
+      });
+    }
+    $('#container').masonry({
+      // options...
+      isAnimated: true,
+      animationOptions: {
+        duration: 750,
+        easing: 'linear',
+        queue: false
+      }
+      
+    });
+  </script>
+  
+</body>
+</html>
