@@ -22,8 +22,10 @@
   trigger.addEventListener( 'click', toggleContent );
 })();
 
+
 // Document Ready Start
 $(document).ready(function() {
+
   // Load Elements on page as I scroll
   (function($) {
     $.fn.visible = function(partial) {

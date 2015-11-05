@@ -1,4 +1,6 @@
+@charset "UTF-8";
 @import url("padding.css");
+@import url(http://fonts.googleapis.com/css?family=Playball);
 @import url(http://fonts.googleapis.com/css?family=Droid+Sans);
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display:400,900italic);
 @font-face {
@@ -22,26 +24,26 @@
   font-weight: normal;
   font-style: normal;
 }
-/* line 7, ../scss/custom.scss */
+/* line 8, ../scss/custom.scss */
 *, *::after, *::before {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-/* line 8, ../scss/custom.scss */
+/* line 9, ../scss/custom.scss */
 .clearfix::before, .clearfix::after {
   display: table;
   content: '';
 }
 
-/* line 9, ../scss/custom.scss */
+/* line 10, ../scss/custom.scss */
 .clearfix::after {
   clear: both;
 }
 
-/* line 19, ../scss/custom.scss */
+/* line 20, ../scss/custom.scss */
 body {
-  background: #22313f;
+  background: #22313F;
   color: #dbdbdb;
   font-weight: 400;
   font-size: 1rem;
@@ -49,7 +51,7 @@ body {
   overflow-x: hidden;
 }
 
-/* line 28, ../scss/custom.scss */
+/* line 29, ../scss/custom.scss */
 [class^="flaticon-"], [class*=" flaticon-"],
 [class^="flaticon-"], [class*=" flaticon-"] {
   font-family: Flaticon;
@@ -62,74 +64,74 @@ body {
   -webkit-transition: color, 0.4s;
   transition: color, 0.4s;
 }
-/* line 36, ../scss/custom.scss */
+/* line 37, ../scss/custom.scss */
 [class^="flaticon-"]:hover, [class*=" flaticon-"]:hover,
 [class^="flaticon-"]:hover, [class*=" flaticon-"]:hover {
-  color: #22313f;
+  color: #22313F;
 }
 
-/* line 41, ../scss/custom.scss */
+/* line 42, ../scss/custom.scss */
 .flaticon-email21:before {
   content: "\e000";
 }
 
-/* line 45, ../scss/custom.scss */
+/* line 46, ../scss/custom.scss */
 .flaticon-github17:before {
   content: "\e001";
 }
 
-/* line 49, ../scss/custom.scss */
+/* line 50, ../scss/custom.scss */
 .flaticon-google1:before {
   content: "\e002";
 }
 
-/* line 53, ../scss/custom.scss */
+/* line 54, ../scss/custom.scss */
 .flaticon-linkedin11:before {
   content: "\e003";
 }
 
-/* line 57, ../scss/custom.scss */
+/* line 58, ../scss/custom.scss */
 .row {
   max-width: 75.000em;
 }
 
-/* line 61, ../scss/custom.scss */
+/* line 62, ../scss/custom.scss */
 p {
   font-size: 1.1rem;
   line-height: 1.5rem;
 }
 
-/* line 66, ../scss/custom.scss */
+/* line 67, ../scss/custom.scss */
 a {
-  color: #22313f;
+  color: #22313F;
   text-decoration: none;
 }
 
-/* line 72, ../scss/custom.scss */
+/* line 73, ../scss/custom.scss */
 .modalBtn p, .button p, .mobBtn p {
   display: inline;
 }
 
-/* line 78, ../scss/custom.scss */
+/* line 79, ../scss/custom.scss */
 button:hover {
   background-color: rgba(255, 255, 255, 0);
 }
-/* line 81, ../scss/custom.scss */
+/* line 82, ../scss/custom.scss */
 button:active {
   background-color: rgba(255, 255, 255, 0);
 }
-/* line 84, ../scss/custom.scss */
+/* line 85, ../scss/custom.scss */
 button:focus {
   background-color: rgba(255, 255, 255, 0);
 }
 
-/* line 89, ../scss/custom.scss */
+/* line 90, ../scss/custom.scss */
 .midBack {
   position: relative;
   height: 600px;
 }
 
-/* line 94, ../scss/custom.scss */
+/* line 95, ../scss/custom.scss */
 .headImg {
   height: 800px;
   width: 100%;
@@ -140,42 +142,42 @@ button:focus {
   background-size: cover;
 }
 
-/* line 101, ../scss/custom.scss */
+/* line 102, ../scss/custom.scss */
 .midNfo {
   position: absolute;
   top: 0;
   left: 0;
 }
 
-/* line 107, ../scss/custom.scss */
+/* line 108, ../scss/custom.scss */
 .mobGrid[class*="block-grid-"] > li {
   padding: 0 0.625rem 1rem;
 }
-/* line 109, ../scss/custom.scss */
+/* line 110, ../scss/custom.scss */
 .mobGrid[class*="block-grid-"] > li:nth-of-type(odd) {
   padding: 0 0 1rem 0.625rem;
 }
-/* line 112, ../scss/custom.scss */
+/* line 113, ../scss/custom.scss */
 .mobGrid[class*="block-grid-"] > li:nth-of-type(even) {
   padding: 0 0.625rem 1rem 0;
 }
-/* line 116, ../scss/custom.scss */
+/* line 117, ../scss/custom.scss */
 .mobGrid p {
   margin-bottom: 10px;
   font-size: 1.5em;
 }
 
-/* line 123, ../scss/custom.scss */
+/* line 124, ../scss/custom.scss */
 .techGrid[class*="block-grid-"] > li {
   padding: 0 0.625rem 0;
 }
 
-/* line 127, ../scss/custom.scss */
+/* line 128, ../scss/custom.scss */
 footer {
   min-height: 500px;
 }
 
-/* line 131, ../scss/custom.scss */
+/* line 132, ../scss/custom.scss */
 h1, h2, h3, h4, h5, h6 {
   width: 100%;
   word-spacing: -0.40rem;
@@ -185,7 +187,7 @@ h1, h2, h3, h4, h5, h6 {
   font-weight: bold;
 }
 
-/* line 140, ../scss/custom.scss */
+/* line 141, ../scss/custom.scss */
 blockquote {
   border-left: none;
   margin: 0;
@@ -193,13 +195,13 @@ blockquote {
   position: relative;
   margin-top: 50px;
 }
-/* line 146, ../scss/custom.scss */
+/* line 147, ../scss/custom.scss */
 blockquote cite {
   font-size: 1.3rem;
   color: #a5a6a7;
   text-align: center;
 }
-/* line 151, ../scss/custom.scss */
+/* line 152, ../scss/custom.scss */
 blockquote p {
   text-align: center;
   margin-bottom: 0;
@@ -207,9 +209,9 @@ blockquote p {
   font-family: "Playfair Display", serif;
   font-size: 24px;
   font-style: italic;
-  quotes: "\201C" "\201D" "\2018" "\2019";
+  quotes: "“" "”" "‘" "’";
 }
-/* line 159, ../scss/custom.scss */
+/* line 160, ../scss/custom.scss */
 blockquote p:before {
   color: #19242e;
   font-family: "Playfair Display", serif;
@@ -220,7 +222,7 @@ blockquote p:before {
   margin-right: 0.1em;
   vertical-align: -0.45em;
 }
-/* line 169, ../scss/custom.scss */
+/* line 170, ../scss/custom.scss */
 blockquote p:after {
   color: #19242e;
   font-family: "Playfair Display", serif;
@@ -231,7 +233,7 @@ blockquote p:after {
   vertical-align: -0.5em;
 }
 
-/* line 181, ../scss/custom.scss */
+/* line 182, ../scss/custom.scss */
 .modalBtn, .button, .mobBtn {
   background-color: #141c25;
   width: 100%;
@@ -247,16 +249,16 @@ blockquote p:after {
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
-/* line 192, ../scss/custom.scss */
+/* line 193, ../scss/custom.scss */
 .modalBtn:hover, .button:hover, .mobBtn:hover {
-  background-color: #22313f;
+  background-color: #22313F;
   border: 2px solid #dadada;
   -moz-transition: background-color, 0.4s;
   -o-transition: background-color, 0.4s;
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
-/* line 197, ../scss/custom.scss */
+/* line 198, ../scss/custom.scss */
 .modalBtn:focus, .button:focus, .mobBtn:focus {
   background-color: #141c25;
   -moz-transition: background-color, 0.4s;
@@ -265,63 +267,63 @@ blockquote p:after {
   transition: background-color, 0.4s;
 }
 
-/* line 203, ../scss/custom.scss */
+/* line 204, ../scss/custom.scss */
 .button {
   background-color: #a5a6a7;
   border: 2px solid rgba(165, 166, 167, 0);
-  color: #22313f;
+  color: #22313F;
 }
-/* line 208, ../scss/custom.scss */
+/* line 209, ../scss/custom.scss */
 .button:hover {
-  background-color: #22313f;
+  background-color: #22313F;
   border: 2px solid #a5a6a7;
   -moz-transition: background-color, 0.4s;
   -o-transition: background-color, 0.4s;
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
-/* line 213, ../scss/custom.scss */
+/* line 214, ../scss/custom.scss */
 .button:focus {
-  background-color: #22313f;
+  background-color: #22313F;
   -moz-transition: background-color, 0.4s;
   -o-transition: background-color, 0.4s;
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
 
-/* line 219, ../scss/custom.scss */
+/* line 220, ../scss/custom.scss */
 .mobBtn {
   margin-top: 0;
   padding: 1em;
   background-color: rgba(218, 218, 218, 0.5);
   border: none;
-  color: #22313f;
+  color: #22313F;
 }
-/* line 226, ../scss/custom.scss */
+/* line 227, ../scss/custom.scss */
 .mobBtn:hover {
   cursor: pointer;
   color: #dadada;
-  background-color: #22313f;
+  background-color: #22313F;
   border: none;
   -moz-transition: background-color, 0.4s;
   -o-transition: background-color, 0.4s;
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
-/* line 233, ../scss/custom.scss */
+/* line 234, ../scss/custom.scss */
 .mobBtn:focus {
-  background-color: #22313f;
+  background-color: #22313F;
   -moz-transition: background-color, 0.4s;
   -o-transition: background-color, 0.4s;
   -webkit-transition: background-color, 0.4s;
   transition: background-color, 0.4s;
 }
-/* line 237, ../scss/custom.scss */
+/* line 238, ../scss/custom.scss */
 .mobBtn p {
   font-size: 35px;
 }
 
-/* line 242, ../scss/custom.scss */
+/* line 243, ../scss/custom.scss */
 .topNumber {
   position: absolute;
   width: 320px;
@@ -331,18 +333,18 @@ blockquote p:after {
   margin: 0 auto;
   z-index: 99999;
 }
-/* line 250, ../scss/custom.scss */
+/* line 251, ../scss/custom.scss */
 .topNumber h3 {
   text-align: center;
 }
-/* line 253, ../scss/custom.scss */
+/* line 254, ../scss/custom.scss */
 .topNumber a {
   color: #a5a6a7;
   font-size: 40px;
   font-weight: 900;
 }
 
-/* line 260, ../scss/custom.scss */
+/* line 261, ../scss/custom.scss */
 .social {
   position: absolute;
   width: 320px;
@@ -353,7 +355,7 @@ blockquote p:after {
   z-index: 99999;
 }
 
-/* line 271, ../scss/custom.scss */
+/* line 272, ../scss/custom.scss */
 .socialBot [class^="flaticon-"], .socialBot [class*=" flaticon-"],
 .socialBot [class^="flaticon-"], .socialBot [class*=" flaticon-"] {
   font-family: Flaticon;
@@ -366,18 +368,18 @@ blockquote p:after {
   -webkit-transition: color, 0.4s;
   transition: color, 0.4s;
 }
-/* line 279, ../scss/custom.scss */
+/* line 280, ../scss/custom.scss */
 .socialBot [class^="flaticon-"]:hover, .socialBot [class*=" flaticon-"]:hover,
 .socialBot [class^="flaticon-"]:hover, .socialBot [class*=" flaticon-"]:hover {
   color: #676767;
 }
 
-/* line 285, ../scss/custom.scss */
+/* line 286, ../scss/custom.scss */
 .about {
   margin-bottom: 60px;
 }
 
-/* line 289, ../scss/custom.scss */
+/* line 290, ../scss/custom.scss */
 .menu {
   height: 65px;
   width: 100%;
@@ -386,13 +388,13 @@ blockquote p:after {
   padding: 10px;
   top: 0;
   left: 0;
-  background-color: #22313f;
+  background-color: #22313F;
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* line 301, ../scss/custom.scss */
+/* line 302, ../scss/custom.scss */
 .menuOpen {
   background: url(../img/menuSub.svg) 0 0 no-repeat;
   -moz-background-size: cover;
@@ -402,12 +404,12 @@ blockquote p:after {
   width: 45px;
   height: 45px;
 }
-/* line 306, ../scss/custom.scss */
+/* line 307, ../scss/custom.scss */
 .menuOpen:hover {
   cursor: pointer;
 }
 
-/* line 311, ../scss/custom.scss */
+/* line 312, ../scss/custom.scss */
 .mobileMenu {
   position: fixed;
   z-index: 99;
@@ -416,23 +418,23 @@ blockquote p:after {
   width: 320px;
   height: 100%;
   min-height: 100%;
-  background-color: #22313f;
+  background-color: #22313F;
   -moz-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   -webkit-box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
   box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.5);
 }
 
-/* line 322, ../scss/custom.scss */
+/* line 323, ../scss/custom.scss */
 .close {
   padding: 15px 15px 0 15px;
 }
-/* line 324, ../scss/custom.scss */
+/* line 325, ../scss/custom.scss */
 .close h1 {
   display: inline-block;
   line-height: 0.8em;
 }
 
-/* line 330, ../scss/custom.scss */
+/* line 331, ../scss/custom.scss */
 .closeBtn {
   display: inline;
   cursor: pointer;
@@ -447,39 +449,39 @@ blockquote p:after {
   background-size: cover;
 }
 
-/* line 342, ../scss/custom.scss */
+/* line 343, ../scss/custom.scss */
 .menu h1 {
   line-height: 0.5em;
 }
-/* line 345, ../scss/custom.scss */
+/* line 346, ../scss/custom.scss */
 .menu a {
   letter-spacing: 1px;
   color: #dadada;
   font-weight: bold;
 }
-/* line 351, ../scss/custom.scss */
+/* line 352, ../scss/custom.scss */
 .menu .active a {
   padding: 0 10px;
   border-left: 2px solid #dadada;
   border-right: 2px solid #dadada;
 }
 
-/* line 359, ../scss/custom.scss */
+/* line 360, ../scss/custom.scss */
 .menuActive {
   left: 0;
 }
 
-/* line 363, ../scss/custom.scss */
+/* line 364, ../scss/custom.scss */
 .boldWord {
   font-family: 'bebas_neueregular';
 }
 
-/* line 367, ../scss/custom.scss */
+/* line 368, ../scss/custom.scss */
 .port-hide {
   visibility: hidden;
 }
 
-/* line 371, ../scss/custom.scss */
+/* line 372, ../scss/custom.scss */
 .company {
   width: 100%;
   text-align: center;
@@ -489,14 +491,14 @@ blockquote p:after {
   left: 0;
   font-size: 1.15rem;
 }
-/* line 379, ../scss/custom.scss */
+/* line 380, ../scss/custom.scss */
 .company h4 {
   word-spacing: 0;
   text-align: center;
   font-family: "Droid Sans", sans-serif;
 }
 
-/* line 387, ../scss/custom.scss */
+/* line 388, ../scss/custom.scss */
 .portBtn {
   width: 100%;
   position: absolute;
@@ -505,7 +507,7 @@ blockquote p:after {
   right: 0;
   padding: 10px;
 }
-/* line 394, ../scss/custom.scss */
+/* line 395, ../scss/custom.scss */
 .portBtn h3 {
   position: relative;
   width: 225px;
@@ -517,18 +519,18 @@ blockquote p:after {
   word-spacing: 0;
 }
 
-/* line 406, ../scss/custom.scss */
+/* line 407, ../scss/custom.scss */
 .content {
   margin: 10px;
 }
-/* line 408, ../scss/custom.scss */
+/* line 409, ../scss/custom.scss */
 .content h1 {
   font-family: "bebas_neuelight", sans-serif;
   text-transform: uppercase;
   word-spacing: -0.30rem;
 }
 
-/* line 415, ../scss/custom.scss */
+/* line 416, ../scss/custom.scss */
 .intro {
   position: fixed;
   -moz-box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
@@ -538,20 +540,20 @@ blockquote p:after {
   overflow: hidden;
   width: 100%;
   height: 100%;
-  background: #22313f;
+  background: #22313F;
   -webkit-transition: -webkit-transform 0.6s;
   transition: transform 0.6s;
   -webkit-transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
   transition-timing-function: cubic-bezier(0.7, 0, 0.3, 1);
 }
 
-/* line 429, ../scss/custom.scss */
+/* line 430, ../scss/custom.scss */
 .container--open .intro {
   -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
   transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
 }
 
-/* line 434, ../scss/custom.scss */
+/* line 435, ../scss/custom.scss */
 .intro__image {
   position: absolute;
   bottom: 0;
@@ -574,14 +576,14 @@ blockquote p:after {
   background-size: cover;
 }
 
-/* line 453, ../scss/custom.scss */
+/* line 454, ../scss/custom.scss */
 .container--open .intro__image {
   opacity: 0.3;
   -webkit-transform: translate3d(0, 30%, 0);
   transform: translate3d(0, 30%, 0);
 }
 
-/* line 459, ../scss/custom.scss */
+/* line 460, ../scss/custom.scss */
 .intro__content {
   position: relative;
   padding: 20px;
@@ -589,7 +591,7 @@ blockquote p:after {
   height: 100%;
 }
 
-/* line 466, ../scss/custom.scss */
+/* line 467, ../scss/custom.scss */
 .intro__title {
   margin: 0;
   font-size: 4rem;
@@ -599,12 +601,12 @@ blockquote p:after {
   color: #a5a6a7;
 }
 
-/* line 476, ../scss/custom.scss */
+/* line 477, ../scss/custom.scss */
 .intro_sub {
   color: #a5a6a7;
 }
 
-/* line 479, ../scss/custom.scss */
+/* line 480, ../scss/custom.scss */
 .reveal-modal-bg {
   position: fixed;
   top: 0;
@@ -612,19 +614,19 @@ blockquote p:after {
   background: rgba(20, 28, 37, 0.9);
 }
 
-/* line 486, ../scss/custom.scss */
+/* line 487, ../scss/custom.scss */
 .reveal-modal {
-  background-color: #22313f;
+  background-color: #22313F;
   border: 4px solid #141c25;
 }
 
-/* line 491, ../scss/custom.scss */
+/* line 492, ../scss/custom.scss */
 .close-reveal-modal {
   top: -0.01rem !important;
   right: 1.2rem !important;
 }
 
-/* line 496, ../scss/custom.scss */
+/* line 497, ../scss/custom.scss */
 .modal {
   position: absolute;
   top: 0;
@@ -632,12 +634,12 @@ blockquote p:after {
   right: 0;
   margin: 0 auto;
 }
-/* line 502, ../scss/custom.scss */
+/* line 503, ../scss/custom.scss */
 .modal p {
   font-size: 1.1em;
 }
 
-/* line 507, ../scss/custom.scss */
+/* line 508, ../scss/custom.scss */
 .trigger {
   display: inline;
   position: relative;
@@ -653,7 +655,7 @@ blockquote p:after {
   background: none;
 }
 
-/* line 522, ../scss/custom.scss */
+/* line 523, ../scss/custom.scss */
 .icon rect,
 .icon line {
   stroke: #dbdbdb;
@@ -661,24 +663,24 @@ blockquote p:after {
   stroke-width: 10px;
 }
 
-/* line 528, ../scss/custom.scss */
+/* line 529, ../scss/custom.scss */
 .icon rect {
   stroke-width: 2px;
 }
 
-/* line 532, ../scss/custom.scss */
+/* line 533, ../scss/custom.scss */
 .icon {
   -webkit-transform-origin: 50% 50%;
   transform-origin: 50% 50%;
   -webkit-transition: opacity 0.3s, -webkit-transform 0.3s;
   transition: opacity 0.3s, transform 0.3s;
 }
-/* line 537, ../scss/custom.scss */
+/* line 538, ../scss/custom.scss */
 .icon:hover {
   cursor: pointer;
 }
 
-/* line 542, ../scss/custom.scss */
+/* line 543, ../scss/custom.scss */
 .icon--cross,
 .trigger--active .icon--grid {
   padding: 0 0 0 20px;
@@ -687,14 +689,14 @@ blockquote p:after {
   transform: scale3d(1, 1, 1);
 }
 
-/* line 550, ../scss/custom.scss */
+/* line 551, ../scss/custom.scss */
 .trigger--active .icon--cross {
   opacity: 1;
   -webkit-transform: scale3d(0.8, 0.8, 0.8);
   transform: scale3d(0.8, 0.8, 0.8);
 }
 
-/* line 556, ../scss/custom.scss */
+/* line 557, ../scss/custom.scss */
 .portWrap {
   position: relative;
   display: -webkit-flex;
@@ -704,14 +706,14 @@ blockquote p:after {
   padding: 125px 0 0;
 }
 
-/* line 565, ../scss/custom.scss */
+/* line 566, ../scss/custom.scss */
 .portWrap::after {
   position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
-  background: #22313f;
+  background: #22313F;
   content: '';
   opacity: 1;
   -webkit-transition: opacity 0.6s;
@@ -721,32 +723,32 @@ blockquote p:after {
   pointer-events: none;
 }
 
-/* line 581, ../scss/custom.scss */
+/* line 582, ../scss/custom.scss */
 .container--open .portWrap::after {
   opacity: 0;
 }
 
-/* line 585, ../scss/custom.scss */
+/* line 586, ../scss/custom.scss */
 .sites {
   opacity: 0;
 }
 
-/* line 589, ../scss/custom.scss */
+/* line 590, ../scss/custom.scss */
 .graphics {
   opacity: 0;
 }
 
-/* line 593, ../scss/custom.scss */
+/* line 594, ../scss/custom.scss */
 .photos {
   opacity: 0;
 }
 
-/* line 597, ../scss/custom.scss */
+/* line 598, ../scss/custom.scss */
 .links {
   padding-left: 15px;
 }
 
-/* line 602, ../scss/custom.scss */
+/* line 603, ../scss/custom.scss */
 .mobileMenu a {
   font-family: "bebas_neuelight", sans-serif;
   display: block;
@@ -759,25 +761,25 @@ blockquote p:after {
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-/* line 610, ../scss/custom.scss */
+/* line 611, ../scss/custom.scss */
 .mobileMenu a:hover {
   color: #141c25;
 }
 
-/* line 616, ../scss/custom.scss */
+/* line 617, ../scss/custom.scss */
 .item {
   -moz-transition: all 0.5s ease;
   -o-transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   transition: all 0.5s ease;
 }
-/* line 618, ../scss/custom.scss */
+/* line 619, ../scss/custom.scss */
 .item:hover {
   -webkit-transform: scale3d(1.05, 1.05, 1.05);
   transform: scale3d(1.05, 1.05, 1.05);
 }
 
-/* line 625, ../scss/custom.scss */
+/* line 626, ../scss/custom.scss */
 .module {
   width: 100%;
   position: relative;
@@ -786,11 +788,11 @@ blockquote p:after {
   overflow: hidden;
   opacity: 0;
 }
-/* line 632, ../scss/custom.scss */
+/* line 633, ../scss/custom.scss */
 .module:nth-child(odd) {
   margin-right: 0;
 }
-/* line 635, ../scss/custom.scss */
+/* line 636, ../scss/custom.scss */
 .module h2 {
   width: 100%;
   padding-top: 15x;
@@ -800,14 +802,14 @@ blockquote p:after {
   z-index: 999;
 }
 
-/* line 644, ../scss/custom.scss */
+/* line 645, ../scss/custom.scss */
 .already-visible {
   opacity: 1;
 }
 
 /*##################################################
 ################# contact menu  ##################*/
-/* line 650, ../scss/custom.scss */
+/* line 651, ../scss/custom.scss */
 .contact-form {
   position: fixed;
   top: 15px;
@@ -815,56 +817,56 @@ blockquote p:after {
   left: 0;
   margin: 0 auto;
   z-index: 997;
-  background-color: #22313f;
-  border: solid 1px #22313f;
+  background-color: #22313F;
+  border: solid 1px #22313F;
   padding: 0 12px 12px 12px;
   width: 300px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
   display: none;
 }
 
-/* line 664, ../scss/custom.scss */
+/* line 665, ../scss/custom.scss */
 #contClose {
   padding: 15px 0;
 }
-/* line 666, ../scss/custom.scss */
+/* line 667, ../scss/custom.scss */
 #contClose img {
   width: 25px;
   height: 25px;
 }
-/* line 670, ../scss/custom.scss */
+/* line 671, ../scss/custom.scss */
 #contClose:hover {
   cursor: pointer;
 }
 
-/* line 675, ../scss/custom.scss */
+/* line 676, ../scss/custom.scss */
 #contact:hover {
   cursor: pointer;
 }
 
-/* line 680, ../scss/custom.scss */
+/* line 681, ../scss/custom.scss */
 .cont-sites p {
   margin: 0;
 }
 
-/* line 685, ../scss/custom.scss */
+/* line 686, ../scss/custom.scss */
 h3.number {
   font-size: 40px;
   text-align: center;
   word-spacing: 0;
 }
-/* line 689, ../scss/custom.scss */
+/* line 690, ../scss/custom.scss */
 h3.number a {
   color: #dadada;
 }
 
-/* line 696, ../scss/custom.scss */
+/* line 697, ../scss/custom.scss */
 h1.number {
   font-size: 40px;
   text-align: center;
   word-spacing: 0;
 }
-/* line 700, ../scss/custom.scss */
+/* line 701, ../scss/custom.scss */
 h1.number a {
   color: #dadada;
 }
@@ -873,7 +875,7 @@ h1.number a {
 Medium Screen Size
 ########################################################################*/
 @media only screen and (min-width: 40.063em) {
-  /* line 712, ../scss/custom.scss */
+  /* line 713, ../scss/custom.scss */
   .company {
     width: auto;
     text-align: left;
@@ -884,7 +886,7 @@ Medium Screen Size
     font-size: 1.15rem;
   }
 
-  /* line 721, ../scss/custom.scss */
+  /* line 722, ../scss/custom.scss */
   .intro__image {
     background: url("../img/bg.jpg") center center no-repeat;
     -moz-background-size: cover;
@@ -893,22 +895,22 @@ Medium Screen Size
     background-size: cover;
   }
 
-  /* line 726, ../scss/custom.scss */
+  /* line 727, ../scss/custom.scss */
   p {
     font-size: 1.5rem;
     line-height: 2rem;
   }
 
-  /* line 732, ../scss/custom.scss */
+  /* line 733, ../scss/custom.scss */
   blockquote cite {
     font-size: 1.8rem;
   }
-  /* line 735, ../scss/custom.scss */
+  /* line 736, ../scss/custom.scss */
   blockquote p {
     font-size: 35px;
   }
 
-  /* line 739, ../scss/custom.scss */
+  /* line 740, ../scss/custom.scss */
   .headImg {
     background: url(../img/midbg.jpg) right center no-repeat;
     -moz-background-size: cover;
@@ -917,19 +919,19 @@ Medium Screen Size
     background-size: cover;
   }
 
-  /* line 744, ../scss/custom.scss */
+  /* line 745, ../scss/custom.scss */
   .topNumber {
     top: 0;
     right: auto;
     left: 10px;
     margin: 0;
   }
-  /* line 749, ../scss/custom.scss */
+  /* line 750, ../scss/custom.scss */
   .topNumber h3 {
     text-align: left;
   }
 
-  /* line 754, ../scss/custom.scss */
+  /* line 755, ../scss/custom.scss */
   .social {
     top: 10px;
     left: auto;
@@ -937,57 +939,57 @@ Medium Screen Size
     margin: 0;
   }
 
-  /* line 761, ../scss/custom.scss */
+  /* line 762, ../scss/custom.scss */
   .copy {
     padding-top: 15px;
   }
 
-  /* line 765, ../scss/custom.scss */
+  /* line 766, ../scss/custom.scss */
   .portWrap {
     padding: 200px 0 0;
   }
 
-  /* line 768, ../scss/custom.scss */
+  /* line 769, ../scss/custom.scss */
   .module {
     padding: 0.938rem;
     width: 50%;
   }
 
-  /* line 773, ../scss/custom.scss */
+  /* line 774, ../scss/custom.scss */
   .modal p {
     font-size: 1.2em;
   }
 
-  /* line 777, ../scss/custom.scss */
+  /* line 778, ../scss/custom.scss */
   .mobBtn {
     margin-top: 20px;
   }
 
-  /* line 781, ../scss/custom.scss */
+  /* line 782, ../scss/custom.scss */
   .techGrid {
     margin-top: 40px;
   }
 
-  /* line 785, ../scss/custom.scss */
+  /* line 786, ../scss/custom.scss */
   h1.myNfo {
     margin: 0;
     font-size: 40px;
   }
 
-  /* line 790, ../scss/custom.scss */
+  /* line 791, ../scss/custom.scss */
   .itemWrap {
     position: relative;
     width: 33.3333%;
     padding: 15px;
   }
 
-  /* line 796, ../scss/custom.scss */
+  /* line 797, ../scss/custom.scss */
   .container--open .intro {
     -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 150px, 0);
     transform: translate3d(0, -100%, 0) translate3d(0, 150px, 0);
   }
 
-  /* line 801, ../scss/custom.scss */
+  /* line 802, ../scss/custom.scss */
   .portBtn {
     width: auto;
     opacity: 1;
@@ -1000,16 +1002,254 @@ Medium Screen Size
     -webkit-transition: right 0.7s ease;
     transition: right 0.7s ease;
   }
-  /* line 809, ../scss/custom.scss */
+  /* line 810, ../scss/custom.scss */
   .portBtn.portBtnOpen {
     right: -235px;
   }
 }
+/*############################
+Championship Photos
+############################*/
+/* line 820, ../scss/custom.scss */
+.openWrap, .hawaiiWrap, .socalWrap, .actionWrap {
+  background: url(../img/photos/opening.jpg) center center no-repeat;
+  position: relative;
+  height: 300px;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 828, ../scss/custom.scss */
+.hawaiiWrap {
+  background: url(../img/photos/hawaii.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 835, ../scss/custom.scss */
+.socalWrap {
+  background: url(../img/photos/socal.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 841, ../scss/custom.scss */
+.actionWrap {
+  background: url(../img/photos/action.jpg) center center no-repeat;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+/* line 847, ../scss/custom.scss */
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+/* line 854, ../scss/custom.scss */
+.overlay h1 {
+  width: 100%;
+  word-spacing: 0;
+  letter-spacing: 0;
+  color: #dadada;
+  font-family: 'Playball', cursive;
+  font-weight: 400;
+  color: white;
+  width: 100%;
+  text-align: center;
+  position: inherit;
+  top: 50%;
+  left: 0;
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+/* line 872, ../scss/custom.scss */
+.equipment h4, .equipment h3 {
+  word-spacing: 0;
+  letter-spacing: 0;
+  color: #dadada;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+}
+/* line 879, ../scss/custom.scss */
+.equipment a {
+  color: #c1c1c1;
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+}
+/* line 882, ../scss/custom.scss */
+.equipment a:hover {
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+  color: #19242e;
+}
+
+/* line 889, ../scss/custom.scss */
+a.photoLink {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 300px;
+}
+
+/* line 897, ../scss/custom.scss */
+.footer {
+  margin: 30px 0;
+}
+/* line 899, ../scss/custom.scss */
+.footer h4 {
+  word-spacing: 0;
+  letter-spacing: 0;
+  color: #dadada;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+}
+/* line 906, ../scss/custom.scss */
+.footer a {
+  color: #b4b4b4;
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+}
+/* line 909, ../scss/custom.scss */
+.footer a:hover {
+  -moz-transition: color, 0.4s;
+  -o-transition: color, 0.4s;
+  -webkit-transition: color, 0.4s;
+  transition: color, 0.4s;
+  color: #070a0d;
+}
+
+/* line 916, ../scss/custom.scss */
+.donateBtn {
+  background-color: #dadada;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  padding: 0.44em;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF0000;
+  border: 2px solid rgba(218, 218, 218, 0);
+  margin-bottom: 0;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+}
+/* line 929, ../scss/custom.scss */
+.donateBtn:hover {
+  background-color: #22313F;
+  border: 2px solid #dadada;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+  cursor: pointer;
+}
+/* line 935, ../scss/custom.scss */
+.donateBtn:focus {
+  background-color: #141c25;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+}
+
+/* line 942, ../scss/custom.scss */
+.champPhotos h1 {
+  word-spacing: 0;
+  letter-spacing: 0;
+  color: #dadada;
+  font-family: "Droid Sans", sans-serif;
+  font-weight: 400;
+}
+
+/* line 951, ../scss/custom.scss */
+#donate {
+  opacity: 0;
+}
+
+/* line 956, ../scss/custom.scss */
+.donate p {
+  color: #FF0000;
+  text-shadow: 0 0 3px rgba(0, 0, 0, 0.7), 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* line 962, ../scss/custom.scss */
+#donate2 {
+  opacity: 0;
+}
+
+/* line 967, ../scss/custom.scss */
+.donate2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300px;
+  cursor: pointer;
+}
+/* line 973, ../scss/custom.scss */
+.donate2 .donateBtn {
+  background-color: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  padding: 0.44em;
+  font-family: "Droid Sans", sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+  color: #FF0000;
+  border: 2px solid rgba(218, 218, 218, 0);
+  margin-bottom: 0;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+}
+/* line 984, ../scss/custom.scss */
+.donate2 .donateBtn:hover {
+  background-color: #22313F;
+  border: 2px solid #dadada;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+  cursor: pointer;
+}
+/* line 990, ../scss/custom.scss */
+.donate2 .donateBtn:focus {
+  background-color: #141c25;
+  -moz-transition: background-color, 0.4s;
+  -o-transition: background-color, 0.4s;
+  -webkit-transition: background-color, 0.4s;
+  transition: background-color, 0.4s;
+}
+
 /*########################################################################
 Mid-Medium Screen Size
 ########################################################################*/
 @media only screen and (max-width: 54.188em) {
-  /* line 822, ../scss/custom.scss */
+  /* line 1003, ../scss/custom.scss */
   .company {
     width: 100%;
     text-align: center;
@@ -1020,13 +1260,13 @@ Mid-Medium Screen Size
     font-size: 1.15rem;
   }
 
-  /* line 832, ../scss/custom.scss */
+  /* line 1013, ../scss/custom.scss */
   .container--open .intro {
     -webkit-transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
     transform: translate3d(0, -100%, 0) translate3d(0, 75px, 0);
   }
 
-  /* line 837, ../scss/custom.scss */
+  /* line 1018, ../scss/custom.scss */
   .portBtn {
     width: 100%;
     position: absolute;
@@ -1040,31 +1280,31 @@ Mid-Medium Screen Size
 large Screen Size
 ########################################################################*/
 @media only screen and (min-width: 62.5em) {
-  /* line 854, ../scss/custom.scss */
+  /* line 1035, ../scss/custom.scss */
   .module {
     width: 33.333%;
   }
 
-  /* line 859, ../scss/custom.scss */
+  /* line 1040, ../scss/custom.scss */
   .modal p {
     font-size: 1.5em;
   }
 
-  /* line 864, ../scss/custom.scss */
+  /* line 1045, ../scss/custom.scss */
   .copy {
     padding-top: 25px;
   }
 
-  /* line 869, ../scss/custom.scss */
+  /* line 1050, ../scss/custom.scss */
   blockquote cite {
     font-size: 2.2rem;
   }
-  /* line 872, ../scss/custom.scss */
+  /* line 1053, ../scss/custom.scss */
   blockquote p {
     font-size: 50px;
   }
 
-  /* line 877, ../scss/custom.scss */
+  /* line 1058, ../scss/custom.scss */
   .techGrid {
     margin-top: 0;
   }
