@@ -1,4 +1,10 @@
-  
+$('.grid').masonry({
+    // options
+    itemSelector: '.module',
+    // columnWidth: 200,
+    percentPosition: true
+  });
+
 (function() {
   var container = document.getElementById( 'container' ),
       trigger = container.querySelector( '.trigger' );
@@ -6,11 +12,15 @@
     if( classie.has( container, 'container--open' ) ) {
       classie.remove( container, 'container--open' );
       classie.remove( trigger, 'trigger--active' );
+      $('#portView').text('Open My Portfolio').fadeIn('slow');
+      $('.portBtn').removeClass('portClose');
       window.addEventListener( 'scroll', noscroll );
     }
     else {
       classie.add( container, 'container--open' );
       classie.add( trigger, 'trigger--active' );
+      $('#portView').text('Close My Portfolio').fadeIn('slow');
+      $('.portBtn').addClass('portClose');
       window.removeEventListener( 'scroll', noscroll );
     }
   }
@@ -24,7 +34,10 @@
 
 
 // Document Ready Start
-$(document).ready(function() {
+$(document).ready(function() {  
+
+  $(".fancybox").fancybox();
+
 
   // Load Elements on page as I scroll
   (function($) {
@@ -44,52 +57,63 @@ $(document).ready(function() {
     };
   })(jQuery);
 
+
   var win = $(window);
   var allMods = $(".module");
   allMods.each(function(i, el) {
     var el3 = $(el);
     if (el3.visible(true)) {
-      el3.addClass("already-visible item");
+      el3.addClass("already-visible");
     }
   });
+
 
   win.scroll(function(event) {
     allMods.each(function(i, el) {
       var el2 = $(el);
       if (el2.visible(true) && !el2.hasClass("already-visible")) {
-        el2.addClass("bounceInUp").css("opacity", "1");
         setTimeout(function(){
-          el2.removeClass("bounceInUp").addClass("already-visible item");
-        }, 1000);
+          el2.addClass("come-in").css("opacity", "1");
+        }, 200);
       }
     });
   });
 
 
+  // Auto Height
+  var midSize = $(window).innerHeight();
+
+  $('.midBack').css(
+    'height', midSize
+  );
+
 
   // Contact Form
-  var $cont = $('.contact-form');
-  var $close = $('.contClose');
+  var cont = $('.contact-form');
+  var close = $('#contClose');
   $('#contact, #mobCont').click(function(){
-    if( $cont.hasClass('bounceOutUp') ) {
-      $cont.removeClass('bounceOutUp').addClass('bounceInDown').css('display', 'block');
-    }else if( $cont.hasClass('bounceInDown') ){
-      $cont.removeClass('bounceInDown').addClass('bounceOutUp');
+    $('.overlay').fadeToggle('medium');
+
+    if( cont.hasClass('bounceOutUp') ) {
+      cont.removeClass('bounceOutUp').addClass('bounceInDown').css('display', 'block');
+    }else if( cont.hasClass('bounceInDown') ){
+      cont.removeClass('bounceInDown').addClass('bounceOutUp');
       setTimeout(function(){
-        $cont.css("display", "none");
+        cont.css("display", "none");
       }, 1000);
     }else{
-      $cont.addClass('bounceInDown').css('display', 'block');
+      cont.addClass('bounceInDown').css('display', 'block');
     }
   });
 
-  $('#contClose').click(function(){
-    if( $cont.hasClass('bounceInDown') ){
-      $cont.removeClass('bounceInDown').addClass('bounceOutUp');
+
+  close.click(function(){
+    $('.overlay').fadeToggle('slow');
+    if( cont.hasClass('bounceInDown') ){
+      cont.removeClass('bounceInDown').addClass('bounceOutUp');
     }
   });
   
-
 
   // Ajax Contact Form
   $(function() {

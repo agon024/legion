@@ -25,7 +25,8 @@
     <!-- <link rel="stylesheet" type="text/css" href="css/normalize.css" /> -->
     <link rel="stylesheet" href="css/app.css" />
     <link rel="stylesheet" href="css/animate.min.css" />
-    <link rel="stylesheet" href="css/dzsparallaxer.css" />
+    <link rel="stylesheet" href="dzsparallaxer/dzsparallaxer.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
     <link rel="stylesheet" href="css/custom.css" />
     
     <!-- JavaScripts -->
@@ -49,31 +50,9 @@
   </head>
   <body>
 
-  <!-- ##############################################
-  Modal Windows Start
-  ############################################### -->
-    <!-- SVG Buttons Start -->
-    <svg height="0" width="0" style="position:absolute;padding-left: -100%;">
-      <g id="open">
-        <path fill="#a5a6a7" d="M3.417,3.417c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
-        C26.583,3.417,17.445,4.768,3.417,3.417z"/>
-        <path fill="#a5a6a7" d="M33.5,3.417c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
-          C56.667,3.417,47.529,4.768,33.5,3.417z"/>
-        <path fill="#a5a6a7" d="M3.417,32.917c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
-          C26.583,32.917,17.445,34.268,3.417,32.917z"/>
-        <path fill="#a5a6a7" d="M33.5,32.917c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
-          C56.667,32.917,47.529,34.268,33.5,32.917z"/>
-      </g>
-      <g id="close">
-        <path fill="#a5a6a7" d="M36.255,27.166l15.863-15.863c2.51-2.51,2.51-6.579,0-9.088c-2.508-2.509-6.579-2.509-9.087,0L27.167,18.08
-        L11.303,2.216c-2.508-2.509-6.579-2.509-9.087,0c-2.51,2.51-2.51,6.579,0,9.088l15.863,15.863L2.216,43.029
-        c-2.51,2.51-2.51,6.579,0,9.088c1.254,1.254,2.9,1.882,4.543,1.882s3.29-0.627,4.543-1.882l15.864-15.863l15.864,15.864
-        C44.285,53.373,45.93,54,47.574,54s3.29-0.627,4.543-1.882c2.51-2.51,2.51-6.579,0-9.088L36.255,27.166z"/>
-      </g>
-    </svg>
-    <!-- SVG Buttons End -->
+  <div class="overlay"></div>
 
-    <!-- Contact Form -->
+  <!-- Contact Form -->
     <div class="contact-form animated">
       <div id="contClose" class="text-right">
         <img src="img/cont_close.svg" alt="">
@@ -100,18 +79,263 @@
       </form>  
     </div> 
     <!-- Contact Form End -->
+
+  <!-- Jbird Modal -->
+  <div id="jbird" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.legiondesigns.com/dev/jbird" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by <a href="http://www.scuitto.com"><em>Grace Scuitto</em></a></h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- American Fence Rental Modal -->
+  <div id="amfence" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.americanfencerental.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+
+  <!-- Wheel to Walk Modal -->
+  <div id="wheel" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.legiondesigns.com/wheel" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Askeo Modal -->
+  <div id="askeo" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.legiondesigns.com/askeo" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Scuitto Modal -->
+  <div id="grace" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.scuitto.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by <a href="http://www.scuitto.com"><em>Grace Scuitto</em></a></h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Heaven in Photos Modal -->
+  <div id="heaven" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.heaveninphotos.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- MoyerTex Modal -->
+  <div id="moyer" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.moyertex.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Pauls Cigars Modal -->
+  <div id="pauls" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.paulscigars.net" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Portland Battery Recycling Modal -->
+  <div id="recycling" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.portlandbatteryrecycling.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+  <!-- Career Bridge Modal -->
+  <div id="bridge" class="reveal-modal modal" data-reveal>
+    <div class="icon1"><a href="http://www.careerbridgepdx.com" target="_blank"></a></div>
+    <h2 class="text-center">Site Layout Designed by Legion Designs</h2>
+    <h3 class="medium-pad-top">Tech I Used</h3>
+    <ul class="large-block-grid-7 medium-block-grid-7 small-block-grid-4 columns no-pad techGrid">
+      <li><img src="img/tech/wp.svg" alt="WordPress"></li>
+      <li><img src="img/tech/woo.svg" alt="WooCommerce"></li>
+      <li><img src="img/tech/zurb.svg" alt="Zurb Foundation"></li>
+      <li><img src="img/tech/php.svg" alt="PHP"></li>
+      <li><img src="img/tech/html.svg" alt="HTML"></li>
+      <li><img src="img/tech/css3.svg" alt="CSS3"></li>
+      <li><img src="img/tech/js.svg" alt="Javascript"></li>
+      <li><img src="img/tech/jquery.svg" alt="jQuery"></li>
+      <li><img src="img/tech/ajax.svg" alt="AJAX"></li>
+      <li><img src="img/tech/sass.svg" alt="SASS"></li>
+      <li><img src="img/tech/emmet.svg" alt="Emmet"></li>
+      <li><img src="img/tech/ai.svg" alt="Adobe Illustrator"></li>
+      <li><img src="img/tech/ps.svg" alt="Adove Photoshop"></li>
+    </ul>
+    <a class="close-reveal-modal"></a>
+  </div><!-- Description Modal End -->
+
+
+    <!-- SVG Buttons Start -->
+    <svg height="0" width="0" style="position:absolute;padding-left: -100%;">
+      <g id="open">
+        <path fill="#a5a6a7" d="M3.417,3.417c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
+        C26.583,3.417,17.445,4.768,3.417,3.417z"/>
+        <path fill="#a5a6a7" d="M33.5,3.417c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
+          C56.667,3.417,47.529,4.768,33.5,3.417z"/>
+        <path fill="#a5a6a7" d="M3.417,32.917c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
+          C26.583,32.917,17.445,34.268,3.417,32.917z"/>
+        <path fill="#a5a6a7" d="M33.5,32.917c0,0,1.351,9.138,0,23.167c0,0,9.138-1.351,23.167,0c0,0-1.351-9.138,0-23.167
+          C56.667,32.917,47.529,34.268,33.5,32.917z"/>
+      </g>
+      <g id="close">
+        <path fill="#a5a6a7" d="M36.255,27.166l15.863-15.863c2.51-2.51,2.51-6.579,0-9.088c-2.508-2.509-6.579-2.509-9.087,0L27.167,18.08
+        L11.303,2.216c-2.508-2.509-6.579-2.509-9.087,0c-2.51,2.51-2.51,6.579,0,9.088l15.863,15.863L2.216,43.029
+        c-2.51,2.51-2.51,6.579,0,9.088c1.254,1.254,2.9,1.882,4.543,1.882s3.29-0.627,4.543-1.882l15.864-15.863l15.864,15.864
+        C44.285,53.373,45.93,54,47.574,54s3.29-0.627,4.543-1.882c2.51-2.51,2.51-6.579,0-9.088L36.255,27.166z"/>
+      </g>
+    </svg>
+    <!-- SVG Buttons End -->
     
     <div id="container" class="container">
 
+    <ul class="small-block-grid-3 social text-center">
+      <li id="contact" class="flaticon-mail-black-envelope-symbol"></li>
+      <li><a href="https://instagram.com/heaveninphotos" class="flaticon-instagram-logo"></a></li>
+      <li><a href="https://www.linkedin.com/in/kevinray2" class="flaticon-linkedin-letters"></a></li>
+    </ul>
+
+
       <header class="intro">
 
-        <ul class="small-block-grid-4 social text-center">
-          <li id="contact" class="flaticon-email21"></li>
-          <li><a href="https://github.com/legiondesigns" class="flaticon-github17"></a></li>
-          <li><a href="https://plus.google.com/u/0/+KevinRay2" class="flaticon-google1"></a></li>
-          <li><a href="https://www.linkedin.com/in/kevinray2" class="flaticon-linkedin11"></a></li>
-        </ul>
-
+        
         <div class="topNumber">
           <h3><a href="tel:3608527203">360-852-7203</a></h3>
         </div>
@@ -119,7 +343,7 @@
         <div class="intro__image"></div>
         <div class="medium-12 columns intro__content">
           <div class="company">
-            <h1 class="intro__title">LEGION <span class="boldWord">DESIGNS</span></h1>
+            <h1 class="intro__title">Legion Designs</span></h1>
             <h4 class="intro_sub">a mobile first web development company</h4>
           </div>
 
@@ -134,42 +358,505 @@
                 </g>
               </svg>
             </button>
-              <h3>View My Portfolio</h3>
+              <h3 id="portView">View My Portfolio</h3>
           </div>
 
         </div>
 
       </header><!-- /intro -->
 
-      <div class="row">
+      <div class="">
         <div class="portWrap">
-          <div class="small-12 columns large-pad-top about">
-            <h1>About <span class="boldWord">Me</span></h1>
-
-            <p>My name is Kevin Ray. I am currently a senior at the Art Institute of Portland working on a Bachelor's Degree in Web Development and Interactive Media. As a web developer/designer, graphic designer, motion graphic designer, production designer, and photographer, and being that the term "Legion" simply means - MANY, I felt the name fitting since I am one man perfecting MANY types of designs. In everything that I design I feel that “simplicity is bliss”. This is why I have become addicted to typography in the last year. I feel typography is one of the easiest ways to create beauty through simplicity. It tells a story in itself; it helps you navigate through whatever space you are in – it is simple and effective. This type of thinking is always in my head. This belief creates the most key piece of design – FUNCTIONALITY. Whether it is a logo, photograph,   TV commercial, or a website, the user experience is everything. That is why whenever I start a project I always tell myself – "great design breeds great experiences"</p>
-
-            <p>I have personally worked with hundreds of individuals, small businesses, startups and even corporations. I design all of my sites mobile first makeing sure they are fully responsive no matter what device the user is viewing your page on. I am equally skilled at designing corporate websites as well as animated and fun websites.</p>
+          <div class="small-12 columns">
+            <h1>Responsive <span class="boldWord">Web</span> Design</h1>
+            <p>With nearly 60% of web browsing in the USA and 17% globally being done on mobile devices, there has never been a higher need for responsive web design. Within 5 years it is estimated that 75% of the internet traffic in the USA will come from mobile devices.</p>
+                  
+            <p>Every day the number of devices that need to work with your website grows. Responsive design makes sure your site works on all of them.</p>
+                  
+            <p>To see it in action, make sure you are viewing this site on a desktop browser and make the browser thinner and wider by dragging to the left and right. Now hit the refresh button and you should see the layout change to more comfortably fit the new width of the browser.</p>
           </div>
+
+          <div class="small-12 columns about">
+            <h1>About <span class="boldWord">Me</span></h1>
+            <p>My name is Kevin Ray. I am currently a senior at the Art Institute of Portland working on a Bachelor's Degree in Web Development and Interactive Media. I love both front end and back end development. I have personally worked with hundreds of individuals, small businesses, startups and even corporations.</p>
+
+            <p>I design all of my sites mobile first and make sure they are fully responsive no matter what device the user is viewing your page on. I am equally skilled at designing corporate websites as well as animated and fun websites. I understand what it takes to run a business, so rest assured that I'll make the website development process an easy one for you.</p>
+
+            <p>On top of web development I am also a mobile app developer designing universal mobile apps (UMA's) in angular. I am a graphic designer, motion graphic designer, photographer, videographer, traveler and most recently have been diving into the future of artificial intelligence. </p>
+          </div>
+          
+          <div class="portSites">
+            <!-- Current Projects -->
+            <h1 class="columns">Websites</h1>
+
+            <ul id="da-thumbs" class="da-thumbs">
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/jbird.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>JBIRD</h2>
+                      <h6>(In Process)</h6>
+                      <div class="iconWrap">
+                        <a href="http://www.legiondesigns.com/dev/jbird" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="#" data-reveal-id="jbird">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/fence.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>American Fence</h2>
+                      <h6>(In Process)</h6>
+                      <div class="iconWrap">
+                        <a href="http://www.americanfencestore.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="amfence">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/wheel.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Wheel To Walk</h2>
+                      <h6>(In Progress)</h6>
+                      <div class="iconWrap">
+                        <a href="http://www.legiondesigns.com/wheel" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="wheel">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/askeo.jpg" alt="askeo">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Askeo Wrestling</h2>
+                      <h6>(In Progress)</h6>
+                      <div class="iconWrap">
+                        <a href="http://www.legiondesigns.com/askeo" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="askeo">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/grace.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Grace Scuitto</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.scuitto.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="grace">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/hip.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Heaven In Photos</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.heaveninphotos.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="heaven">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/moyer.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>MoyerTex</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.moyertex.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="moyer">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/pauls.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Paul's Cigars</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.paulscigars.net">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="pauls">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/recycling.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Battery Recycling</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.portlandbatteryrecycling.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="recycling">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+              <li class="module">
+                <div class="linkWrap">
+                  <img src="img/sites/career.jpg" alt="">
+                  <div class="moduleNfo">
+                    <span>
+                      <h2>Career Bridge</h2>
+                      <div class="iconWrap">
+                        <a href="http://www.careerbridgepdx.com" target="_blank">
+                          <div class="icon1">
+                            <img src="img/link.png">
+                          </div>
+                        </a>
+                        <a href="" data-reveal-id="bridge">
+                          <div class="icon2">
+                            <img src="img/info.png">
+                          </div>
+                        </a>
+                      </div>
+                    </span>
+                  </div>
+                </div>
+              </li>
+
+          </div>
+
+          <div class="portSites">
+            <h1>Photography</h1>
+
+            <div class="grid">
+
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/01.JPG"><img src="img/photos/thumbs/01.JPG" alt="" /></a>           
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/02.JPG"><img src="img/photos/thumbs/02.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/03.JPG"><img src="img/photos/thumbs/03.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/04.JPG"><img src="img/photos/thumbs/04.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/05.JPG"><img src="img/photos/thumbs/05.JPG" alt="" /></a>
+              </div>              
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/07.JPG"><img src="img/photos/thumbs/07.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/08.JPG"><img src="img/photos/thumbs/08.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/09.JPG"><img src="img/photos/thumbs/09.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/10.JPG"><img src="img/photos/thumbs/10.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/11.JPG"><img src="img/photos/thumbs/11.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/12.JPG"><img src="img/photos/thumbs/12.JPG" alt="" /></a>
+              </div>              
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/14.JPG"><img src="img/photos/thumbs/14.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/06.JPG"><img src="img/photos/thumbs/06.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/15.JPG"><img src="img/photos/thumbs/15.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/16.JPG"><img src="img/photos/thumbs/16.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/17.JPG"><img src="img/photos/thumbs/17.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/18.JPG"><img src="img/photos/thumbs/18.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/19.JPG"><img src="img/photos/thumbs/19.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/13.JPG"><img src="img/photos/thumbs/13.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/20.JPG"><img src="img/photos/thumbs/20.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/21.JPG"><img src="img/photos/thumbs/21.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/22.JPG"><img src="img/photos/thumbs/22.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/23.JPG"><img src="img/photos/thumbs/23.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/24.JPG"><img src="img/photos/thumbs/24.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/25.JPG"><img src="img/photos/thumbs/25.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/26.JPG"><img src="img/photos/thumbs/26.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/27.JPG"><img src="img/photos/thumbs/27.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/28.JPG"><img src="img/photos/thumbs/28.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/29.JPG"><img src="img/photos/thumbs/29.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/30.JPG"><img src="img/photos/thumbs/30.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/31.JPG"><img src="img/photos/thumbs/31.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/32.JPG"><img src="img/photos/thumbs/32.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/33.JPG"><img src="img/photos/thumbs/33.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/34.JPG"><img src="img/photos/thumbs/34.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/35.JPG"><img src="img/photos/thumbs/35.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/36.JPG"><img src="img/photos/thumbs/36.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/37.JPG"><img src="img/photos/thumbs/37.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/38.JPG"><img src="img/photos/thumbs/38.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/39.JPG"><img src="img/photos/thumbs/39.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/40.JPG"><img src="img/photos/thumbs/40.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/41.JPG"><img src="img/photos/thumbs/41.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/42.JPG"><img src="img/photos/thumbs/42.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/43.JPG"><img src="img/photos/thumbs/43.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/44.JPG"><img src="img/photos/thumbs/44.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/45.JPG"><img src="img/photos/thumbs/45.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/46.JPG"><img src="img/photos/thumbs/46.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/47.JPG"><img src="img/photos/thumbs/47.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/48.JPG"><img src="img/photos/thumbs/48.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/49.JPG"><img src="img/photos/thumbs/49.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/50.JPG"><img src="img/photos/thumbs/50.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/51.JPG"><img src="img/photos/thumbs/51.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/52.JPG"><img src="img/photos/thumbs/52.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/53.JPG"><img src="img/photos/thumbs/53.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/54.JPG"><img src="img/photos/thumbs/54.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/55.JPG"><img src="img/photos/thumbs/55.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/56.JPG"><img src="img/photos/thumbs/56.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/57.JPG"><img src="img/photos/thumbs/57.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/58.JPG"><img src="img/photos/thumbs/58.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/59.JPG"><img src="img/photos/thumbs/59.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/60.JPG"><img src="img/photos/thumbs/60.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/61.JPG"><img src="img/photos/thumbs/61.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/62.JPG"><img src="img/photos/thumbs/62.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/63.JPG"><img src="img/photos/thumbs/63.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/64.JPG"><img src="img/photos/thumbs/64.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/65.JPG"><img src="img/photos/thumbs/65.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/66.JPG"><img src="img/photos/thumbs/66.JPG" alt="" /></a>
+              </div>
+              <div class="module">
+                <a class="fancybox" rel="group" href="img/photos/67.JPG"><img src="img/photos/thumbs/67.JPG" alt="" /></a>
+              </div>
+
+            </div>
+          </div>
+
         </div>
       </div>
 
-      <div class="midBack dzsparallaxer auto-init use-loading xlarge-pad-top" data-options='{ direction: "reverse" }'  role="banner">
+      <div class="midBack dzsparallaxer auto-init do-not-set-js-height" data-options='{ direction: "reverse" }'  role="banner">
         <div class="headImg dzsparallaxer--target"></div>
-        <div class="small-12 columns no-pad large-pad-top midNfo">
-          <div class="row">
+        <div class="small-12 columns no-pad large-pad-top midNfo"> <!-- asd -->
+          <div class="">
             <div class="large-6 columns">
               <div class="large-12 medium-6 columns no-pad">
                 <div class="small-12 columns no-pad">
-                  <div class="large-6 columns">
-                    <h1 class="columns number no-pad hide-for-small myNfo">Kevin Ray</h1>
+                  <div class="large-6 columns no-pad">
+                    <h1 class="columns myNfo no-pad hide-for-small">Kevin Ray</h1>
                   </div>
-                  <div class="large-6 columns">
-                    <h1 class="columns number no-pad myNfo"><a href="tel:3608527203">360-852-7203</a></h1>
+                  <div class="large-6 columns no-pad">
+                    <h1 class="columns number no-pad"><a href="tel:3608527203">360-852-7203</a></h1>
                   </div>
                 </div>
               </div>
               <div class="large-12 medium-6 columns no-pad">
-                <form action="contact.php" method="post" id="contact2" name="contact" class="columsn no-pad medium-pad-top hide-for-medium-down">
+                <form action="contact.php" method="post" id="contact2" name="contact" class="columns no-pad medium-pad-top hide-for-medium-down">
                   <label for="cont2Name" class="hide-for-small-up">Name:</label>
                   <input type="text" id="cont2Name" name="name" placeholder="Name" required />
                   <label for="cont2Email" class="hide-for-small-up">Email:</label>
@@ -189,7 +876,7 @@
             </div>
             
             <div class="large-6 columns tech">
-              <ul class="large-block-grid-5 medium-block-grid-7 small-block-grid-3 hide-for-small columns no-pad techGrid">
+              <ul class="large-block-grid-6 medium-block-grid-5 small-block-grid-3 hide-for-small columns no-pad techGrid">
                 <li><img src="img/tech/html.svg" alt=""></li>
                 <li><img src="img/tech/css3.svg" alt=""></li>
                 <li><img src="img/tech/js.svg" alt=""></li>
@@ -198,12 +885,16 @@
                 <li><img src="img/tech/json.svg" alt=""></li>
                 <li><img src="img/tech/angular.svg" alt=""></li>
                 <li><img src="img/tech/sql.svg" alt=""></li>
+                <li><img src="img/tech/git.svg" alt=""></li>
                 <li><img src="img/tech/sass.svg" alt=""></li>
-                <li><img src="img/tech/zurb.svg" alt=""></li>
+                <li><img src="img/tech/zurb2.svg" alt=""></li>
                 <li><img src="img/tech/emmet.svg" alt=""></li>
                 <li><img src="img/tech/php.svg" alt=""></li>
                 <li><img src="img/tech/wp.svg" alt=""></li>
                 <li><img src="img/tech/drupal.svg" alt=""></li>
+                <li><img src="img/tech/modx.svg" alt=""></li>
+                <li><img src="img/tech/ai.svg" alt=""></li>
+                <li><img src="img/tech/ps.svg" alt=""></li>
               </ul>
               <ul class="medium-block-grid-5 small-block-grid-2 columns no-pad hide-for-medium-up mobGrid xlarge-pad-top">
                 <li><p>HTML5</p></li>
@@ -224,7 +915,7 @@
               </ul>
             </div>
           </div>
-        </div><!-- sdf -->
+        </div>
       </div>
 
       <footer>
@@ -242,28 +933,35 @@
                 <p>Copyright &copy; <script type="text/javascript">document.write(new Date().getFullYear());</script> Kevin Ray / Legion Designs</p>
               </div>
               <div class="medium-6 columns">
-                <ul class="small-block-grid-3 socialBot text-center">
-                  <li><a href="https://github.com/legiondesigns" class="flaticon-github17"></a></li>
-                  <li><a href="https://plus.google.com/u/0/+KevinRay2" class="flaticon-google1"></a></li>
-                  <li><a href="https://www.linkedin.com/in/kevinray2" class="flaticon-linkedin11"></a></li>
+                <ul class="small-block-grid-2 socialBot text-center">
+                  <li><a href="https://instagram.com/heaveninphotos" class="flaticon-instagram-logo"></a></li>
+                  <li><a href="https://www.linkedin.com/in/kevinray2" class="flaticon-linkedin-letters"></a></li>
                 </ul>
               </div>
             </div>
           </div>
         </div>
       </footer>
-
-      
-
     </div><!-- /container -->
 
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
     <script src="js/foundation.min.js"></script>
     <script src="js/foundation/foundation.reveal.js"></script>
     <script src="js/app.js"></script>
     <script src="js/classie.js"></script>
-    <script src="js/dzsparallaxer.js"></script>
+    <script src="dzsparallaxer/dzsparallaxer.js"></script>
+    <script src="js/masonry.pkgd.min.js"></script>
+    <script src="js/jquery.fancybox.pack.js"></script>
+    <script src="js/jquery.hoverdir.js"></script>
     <script src="js/custom.js"></script>
+
+    <script type="text/javascript">
+
+      $(function() {
+        $(' #da-thumbs > li ').each( function() { $(this).hoverdir(); } );
+      });
+
+    </script>
 
   </body>
 </html>
