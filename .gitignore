@@ -1,6 +1,11 @@
 /bower_components/*
+
 /.sass-cache/*
+
 /scss/.sass-cache/*
+
 /_Assets/*
+
+/dzsparallaxer/*
 
 *.DS_Store
